@@ -7,3 +7,12 @@ D:\OneDrive\_Personal\Development\Visual Studio 2017\Robocopy GUI\Robocopy GUI\b
 D:\OneDrive\_Personal\Development\Visual Studio 2017\Robocopy GUI\Robocopy GUI\bin\Debug\Robocopy GUI.pdb
 D:\OneDrive\_Personal\Development\Visual Studio 2017\Robocopy GUI\Robocopy GUI\obj\Debug\Robocopy GUI.exe
 D:\OneDrive\_Personal\Development\Visual Studio 2017\Robocopy GUI\Robocopy GUI\obj\Debug\Robocopy GUI.pdb
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\bin\Debug\Robocopy GUI.exe
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\bin\Debug\Robocopy GUI.pdb
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.csprojAssemblyReference.cache
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy_GUI.Form1.resources
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy_GUI.Properties.Resources.resources
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.csproj.GenerateResource.cache
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.csproj.CoreCompileInputs.cache
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.exe
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.pdb

@@ -5,11 +5,14 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Robocopy_GUI
 {
     public partial class Form1 : Form
     {
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -19,31 +22,28 @@ namespace Robocopy_GUI
         {
             string sourceDir = textBox1.Text;
             string destinationDir = textBox2.Text;
-            System.Diagnostics.Process.Start("cmd.exe", Switches);
-        }
 
-        private string Switches()
-        {
             if (radio_button_Mirror.Checked == true
                 && checkBox1.Checked == false)
             {
-                return "robocopy ";
+                Process.Start("powershell.exe", "robocopy" + sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT"
+                    + "pause");
             }
             else if (radio_button_CopyOverNewFiles.Checked == true
                 && checkBox1.Checked == false)
             {
-
+                Process.Start("cmd.exe", "robocopy" + sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT");
             }
             else if (radio_button_CopyOverNewFiles.Checked == true
                 && checkBox1.Checked == true)
             {
-
+                Process.Start("cmd.exe", "robocopy" + sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT");
             }
             else
             {
-                return "Invalid Selection";
+                MessageBox.Show("Invalid Selection");
             }
-
         }
+
     }
 }
