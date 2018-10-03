@@ -16,3 +16,5 @@ D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Roboc
 D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.csproj.CoreCompileInputs.cache
 D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.exe
 D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\obj\Debug\Robocopy GUI.pdb
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\bin\Debug\Robocopy.exe
+D:\OneDrive\_Personal\Development\_git\Robocopy_GUI\Robocopy GUI\bin\Debug\Robocopy.exe.mui
