@@ -25,7 +25,14 @@ namespace Robocopy_GUI
             
             if (radio_button_Mirror.Checked == true)
             {
-                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT /R:2 /W:5 /ETA");
+                Process compiler = new Process();
+                compiler.StartInfo.FileName = "robocopy.exe";
+                compiler.StartInfo.Arguments = sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT /R:2 /W:5 /ETA";
+                compiler.StartInfo.UseShellExecute = false;
+                compiler.StartInfo.RedirectStandardOutput = true;
+                compiler.Start();
+
+                textBox3.AppendText(compiler.StandardOutput.ReadToEnd());
             }
             else if (radio_button_CopyOverNewFiles.Checked == true)
             {

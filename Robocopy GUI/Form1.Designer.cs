@@ -36,6 +36,7 @@
             this.radio_button_CopyOverNewFiles = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.button_StartBackup = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -117,11 +118,20 @@
             this.button_StartBackup.UseVisualStyleBackColor = false;
             this.button_StartBackup.Click += new System.EventHandler(this.button_StartBackup_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 174);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(587, 264);
+            this.textBox3.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button_StartBackup);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radio_button_CopyOverNewFiles);
@@ -147,6 +157,7 @@
         private System.Windows.Forms.RadioButton radio_button_CopyOverNewFiles;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button_StartBackup;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
