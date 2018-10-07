@@ -32,7 +32,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.radio_button_Mirror = new System.Windows.Forms.RadioButton();
             this.radio_button_CopyOverNewFiles = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -73,16 +72,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Destination Directory:";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(95, 174);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(120, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Delete From Source";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // radio_button_Mirror
             // 
             this.radio_button_Mirror.AutoSize = true;
@@ -120,7 +109,7 @@
             this.button_StartBackup.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button_StartBackup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_StartBackup.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button_StartBackup.Location = new System.Drawing.Point(582, 370);
+            this.button_StartBackup.Location = new System.Drawing.Point(621, 377);
             this.button_StartBackup.Name = "button_StartBackup";
             this.button_StartBackup.Size = new System.Drawing.Size(167, 61);
             this.button_StartBackup.TabIndex = 8;
@@ -137,7 +126,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radio_button_CopyOverNewFiles);
             this.Controls.Add(this.radio_button_Mirror);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -155,7 +143,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.RadioButton radio_button_Mirror;
         private System.Windows.Forms.RadioButton radio_button_CopyOverNewFiles;
         private System.Windows.Forms.Label label3;

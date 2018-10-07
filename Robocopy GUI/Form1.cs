@@ -23,21 +23,13 @@ namespace Robocopy_GUI
             string sourceDir = textBox1.Text;
             string destinationDir = textBox2.Text;
             
-            if (radio_button_Mirror.Checked == true
-                && checkBox1.Checked == false)
+            if (radio_button_Mirror.Checked == true)
             {
-                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT"
-                    + "pause");
+                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT /R:2 /W:5 /ETA");
             }
-            else if (radio_button_CopyOverNewFiles.Checked == true
-                && checkBox1.Checked == false)
+            else if (radio_button_CopyOverNewFiles.Checked == true)
             {
-                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT");
-            }
-            else if (radio_button_CopyOverNewFiles.Checked == true
-                && checkBox1.Checked == true)
-            {
-                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT");
+                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MOV /Z /E /XJ /SL /J /R:2 /W:5 /MT /V /ETA");
             }
             else
             {
