@@ -25,16 +25,13 @@ namespace Robocopy_GUI
             
             if (radio_button_Mirror.Checked == true)
             {
-                Process compiler = new Process();
-                compiler.StartInfo.FileName = "robocopy.exe";
-                compiler.StartInfo.Arguments = sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT /R:2 /W:5 /ETA";
-                compiler.StartInfo.UseShellExecute = false;
-                compiler.StartInfo.RedirectStandardOutput = true;
-                compiler.Start();
-
-                textBox3.AppendText(compiler.StandardOutput.ReadToEnd());
+                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MIR /Z /V /XJ /SL /IT /MT /R:2 /W:5 /ETA");
             }
             else if (radio_button_CopyOverNewFiles.Checked == true)
+            {
+                Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /Z /E /XJ /SL /J /R:2 /W:5 /MT /V /ETA");
+            }
+            else if (radio_button_MoveFiles.Checked == true)
             {
                 Process.Start("robocopy.exe", sourceDir + " " + destinationDir + " /MOV /Z /E /XJ /SL /J /R:2 /W:5 /MT /V /ETA");
             }
